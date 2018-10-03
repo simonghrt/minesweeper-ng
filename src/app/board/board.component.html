@@ -1,0 +1,20 @@
+<div class="infos_board" [style.width]="width">
+    <div class="bombNumber"><img [src]="bomb_path" class="icon">{{bombsRemaining}}</div>
+    <div class="time">{{time}}   <img [src]="time_path" class="icon"></div>
+</div>
+
+<br />
+<br />
+
+<div *ngFor="let row of rows">
+    <span *ngFor="let case of data[row]">
+        <span [ngSwitch]="case.val">
+            <bomb *ngSwitchCase="9" [value]=case.val [flagMode]=flagMode [gameSituation]=game_situation (bombTotal)="bombTotal($event)" (invisibleNumberChange)="invisibleNumberChange($event)"></bomb>
+            <blank *ngSwitchCase="0" [value]=case.val [zone]=case.zone [flagMode]=flagMode [gameSituation]=game_situation (bombTotal)="bombTotal($event)" (invisibleNumberChange)="invisibleNumberChange($event)"></blank>
+            <case *ngSwitchDefault [value]=case.val [zone]=case.zone [flagMode]=flagMode [gameSituation]=game_situation (bombTotal)="bombTotal($event)" (invisibleNumberChange)="invisibleNumberChange($event)"></case>
+        </span>
+    </span>
+    <br />
+</div>
+
+

@@ -1,0 +1,16 @@
+<span class="case_body">
+    <span *ngIf="isPlaying == true">
+        <span *ngIf="flag == true"><button class="flag" (click)="removeFlag($event)"><img [src]="flag_path" class="image"></button></span>
+        <span *ngIf="flag == false">
+            <span *ngIf="visibility == false"><button (click)="onClick($event)" class="case"></button></span>
+            <span *ngIf="visibility == true" class="case_visible">{{value}}</span> 
+        </span>
+    </span>
+    <span *ngIf="isPlaying == false">
+        <span *ngIf="flag == true"><button class="flag" (click)="removeFlag($event)" disabled><img [src]="flag_path" class="image"></button></span>
+        <span *ngIf="flag == false">
+            <span *ngIf="visibility == false"><button (click)="onClick($event)" class="case" disabled></button></span>
+            <span *ngIf="visibility == true" class="case_visible">{{value}}</span> 
+        </span>
+    </span>
+</span>

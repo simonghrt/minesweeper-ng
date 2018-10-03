@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+body, html { 
+  background-color: #F4F4F4; 
+  text-align: center; 
+  color: #00796B;  
+}
+

@@ -1,0 +1,29 @@
+.blank {
+    width:20px;
+    height:21px;
+}
+
+.blank_visible {
+    width:20px;
+    height:20px;
+    display:table-cell;
+    text-align: center;
+    font-size: 14px;
+    vertical-align: middle;
+    color: #00796B;
+}
+
+.blank_body {
+}
+
+.image {
+    width:10px;
+    height:15px;
+    vertical-align: top;
+}
+
+.flag {
+    margin:0px;
+    padding:3px;
+    vertical-align:top;
+}

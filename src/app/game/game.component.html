@@ -1,0 +1,7 @@
+<div>
+    <br />
+    <board [flagMode]=flagMode></board>
+    <button *ngIf="flagMode==true" (click)="toggleFlagMode($event)" class="button_activated">Flag Mode</button>
+    <button *ngIf="flagMode==false" (click)="toggleFlagMode($event)" class="button">Flag Mode</button>
+    <button (click)="newParty($event)" class="button">New Game</button>
+<div>

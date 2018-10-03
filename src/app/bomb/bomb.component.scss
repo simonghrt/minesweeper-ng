@@ -1,0 +1,34 @@
+.bomb{
+    width:20px;
+    height:21px;
+}
+
+.bomb_visible {
+    width:20px;
+    height:20px;
+    display:table-cell;
+    text-align: center;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.bomb_body {
+}
+
+.image {
+    width:10px;
+    height:15px;
+    vertical-align: top;
+}
+
+.image_bomb {
+    width:18px;
+    height:17px;
+    vertical-align: middle;
+}
+
+.flag {
+    margin:0px;
+    padding:3px;
+    vertical-align:top;
+}
